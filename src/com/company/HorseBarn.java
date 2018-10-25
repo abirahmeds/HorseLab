@@ -1,18 +1,16 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class HorseBarn {
-    private Horse[] spaces;
+    private Horses[] spaces;
 
-    public HorseBarn (Horse[] spaces) {
+    public HorseBarn (Horses[] spaces) {
         this.spaces = spaces;
     }
 
     public int findHorseSpace (String name) {
         for (int i = 0; i < spaces.length; i++) {
-            if (spaces[i] != null && name.equals(spaces[i]))
+            if (spaces[i] != null && name.equals(spaces[i].getName()))
                 return i;
         }
         return -1;

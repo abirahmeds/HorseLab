@@ -1,6 +1,6 @@
 package com.company;
 
-public interface Horse {
+public interface Horses {
     String getName();
     int getWeight();
 }
